@@ -1,10 +1,10 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'kakaicharles92@gmail.com';
+$siteOwnersEmail = 'charleskakai@charliekaks.com';
 
 
-if($_POST) {
+if(isset($_POST['submit'] {
 
     $name = trim(stripslashes($_POST['contactName']));
     $email = trim(stripslashes($_POST['contactEmail']));
@@ -38,12 +38,11 @@ if($_POST) {
     $from =  $name . " <" . $email . ">";
 
     // Email Headers
-    $headers = "From: " . $from . "\r\n";
+    $headers .= "From: " . $from . "\r\n";
     $headers .= "Reply-To: ". $email . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
-
+   
     if (!$error) {
 
         ini_set("sendmail_from", $siteOwnersEmail); // for windows server
@@ -56,7 +55,7 @@ if($_POST) {
 
     else {
 
-        $response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
+        $response .= (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
         $response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
         $response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
         
