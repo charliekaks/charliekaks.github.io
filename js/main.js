@@ -408,6 +408,12 @@
         });
     };
 
+    const findCurrentYear = ()=>{
+         let date = new Date;
+        let year = date.getFullYear();
+         $('.year').append(`<span>${year}</span>`);
+    }
+
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -427,6 +433,7 @@
         ssAlertBoxes();
         ssContactForm();
         ssBackToTop();
+        findCurrentYear();
 
     })();
 
