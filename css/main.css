@@ -2284,6 +2284,10 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * about
  * ------------------------------------------------------------------- */
+ .grid-item{
+    width: 50%;
+    height: 50%;
+}
 
 @media only screen and (max-width: 1000px) {
     .about-content .left {
@@ -2292,6 +2296,11 @@ html.no-csstransitions .home-content__main {
     .about-content .right {
         padding-left: 30px;
     }
+    .about-content .right .row .col-sm-3  .grid-item{
+        width: 35%;
+        height: 50%;
+    }
+    
 }
 
 @media only screen and (max-width: 900px) {
@@ -2301,6 +2310,11 @@ html.no-csstransitions .home-content__main {
     .about-content .right {
         padding-left: 20px;
     }
+   .about-content .right .row .col-sm-3  .grid-item{
+        width: 35%;
+        height: 50%;
+    }
+    
 }
 
 @media only screen and (max-width: 800px) {
@@ -2319,6 +2333,11 @@ html.no-csstransitions .home-content__main {
     .about-content .left > h3, .about-content .right > h3 {
         text-align: center;
     }
+   .about-content .right .row .col-sm-3  .grid-item{
+        width: 25%;
+        height: 50%;
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -2331,6 +2350,11 @@ html.no-csstransitions .home-content__main {
     .timeline__block {
         padding-left: 6rem;
     }
+   .about-content .right .row .col-sm-3  .grid-item{
+        width: 25%;
+        height: 50%;
+    }
+    
 }
 
 @media only screen and (max-width: 400px) {
@@ -2343,6 +2367,12 @@ html.no-csstransitions .home-content__main {
     .timeline__block {
         padding-left: 5.5rem;
     }
+   .about-content .right .row .col-sm-3  .grid-item{
+        width: 20%;
+        height: 50%;
+    }
+    
+    
 }
 
 
